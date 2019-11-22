@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录系统</title>
+<style type="text/css">
+	body,form{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: url("images/a.png") no-repeat center top;
+		padding: 50px 0 860px;
+	}
+	form{
+		width:248px;
+		height: 450px;
+		background-color: #C0B7B7;
+		padding: 30px 40px;
+		border: 2px dashed #7D1D1F;
+		margin-top: -45px;
+		margin-left: 900px;
+	}
+	input{
+		display:block;
+	}
+	[type="text"],[type="password"]{
+		width: 250px;
+		height: 30px;
+		border: 1px solid #BEF021;
+		margin-bottom: 30px;
+		font-size: 18px;
+		text-indent: 50px;
+	}
+	[type="text"]{
+		background: url("images/1.png") no-repeat 0 -2px;
+	}
+	[type="text" name="mingzi"]{
+		background: url("images/2.png") no-repeat 0 -2px;
+	}
+	[type="text" name="xuehao"]{
+		background: url("images/3.png") no-repeat 0 -2px;
+	}
+	[type="password"]{
+		background: url("images/4.png") no-repeat 0 -2px;
+	}
+	[type="radio"]{
+		background: url("images/5.png") no-repeat 0 -2px;
+	}
+	[type="submit"]{
+		width:255px; 
+		height:44px;   
+		margin:25px auto;  
+		background-image:url("images/6.png");  
+		background-repeat: no-repeat;
+		border:none;
+	}
+	[type="radio"]{
+		display: inline;
+		vertical-align: middle;
+	}
+	label{
+		font-size: 12px;
+	}
+	.shang{
+		margin-left: 20px;
+		margin-top: -22px;
+		text-align: center;
+	}
+	.shang a{
+		color:#999;
+		font-size:15px;
+		text-decoration: none;
+	}
+	.fu{
+		height: 30px;
+		width: 300px;
+		margin: 0 0;
+		text-align: center;
+		font-size: 15px;
+		margin-left: 900px;
+	}
+	.fu a{
+		text-decoration:none;
+	}
+</style>
+</head>
+
+<body>
+<form action="" method="post" name="denglu">
+	<input type="text" name="mingzi" placeholder="你的名字">
+	<input type="text" name="xuehao" placeholder="你的学号">
+	<input type="text" name="aihao" placeholder="认真写哈哈哈">
+	<input type="password" name="mima" placeholder="反正也记不下来，随便写">
+	<input type="radio" name="duoxuan" value="1">
+	<label for="duoxuan">我好棒</label>
+	<input type="text" name="lihai" placeholder="选吧">
+	<select>
+		<option>厉害</option>
+		<option>厉害</option>
+		<option>厉害</option>
+		<option>厉害</option>
+		<option>厉害</option>
+	</select>
+	<div class="shang">
+		<a href="#">赏一个赞</a>
+		<a href="#">赏两个赞</a>
+	</div>
+	<input type="submit" name="submit" value="">
+</form>
+<div class="fu">
+	请选择扶贫方式：
+		<a href="#">微信扶贫</a>
+		<a href="#">支付宝扶贫</a>
+	</div>
+</body>
+</html>
