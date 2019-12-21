@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>鼠标移入移出事件编程</title>
+	 <style>
+        *{margin:0;padding:0;}
+        div{
+            width:250px;
+            height:80px;
+            text-align:center;
+            line-height:80px;
+            font-weight:bold;
+            font-size:25px;
+            background-color: pink;
+            color:#fff;
+            margin:20px auto;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+	<div id="Wrap1">我是Wrap1</div>
+	<div id="Wrap2">我是Wrap2</div>
+	<script>
+		let oWrap1 = document.getElementById("Wrap1"),
+            oWrap2 = document.getElementById("Wrap2");
+            oWrap1.onmouseenter = function(){
+                oWrap2.innerHTML = "鼠标移入了Wrap1";
+            }
+            oWrap1.onmouseleave = function(){
+                oWrap2.innerHTML = "鼠标离开了Wrap1";
+            }
+            oWrap2.onmouseenter = function(){
+                oWrap1.innerHTML = "鼠标移入了Wrap2";
+            }
+            oWrap2.onmouseleave = function(){
+                oWrap1.innerHTML = "鼠标离开了Wrap2";
+            }
+	</script>
+</body>
+</html>

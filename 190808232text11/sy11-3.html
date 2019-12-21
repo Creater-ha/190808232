@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片单击切换</title>
+	<style>
+        *{margin:0;padding:0;}
+        #wrap{
+            position: relative;
+            width:160px;
+            height:328px;
+            margin:auto;
+            border:10px solid #00D0FF;
+            cursor: pointer;
+        }
+        #wrap img{
+            position: absolute;
+            display: none;
+        }
+        #wrap .on{
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+	 <div id="wrap">
+        <img id="img1" class="on" src="images/a.jpg" alt="">
+        <img id="img2" src="images/c.jpg" alt="">
+		<img id="img3" src="images/b.jpg" alt="">
+		<img id="img4" src="images/d.jpg" alt="">
+    </div>
+    <script>
+        let oImg1 = document.getElementById("img1"),
+            oImg2 = document.getElementById("img2"),
+			oImg3 = document.getElementById("img3"),
+			oImg4 = document.getElementById("img4");
+            oImg1.onclick = function(){
+                oImg1.className = "";
+                oImg2.className = "on";
+				oImg3.className = "";
+				oImg4.className = "";
+            }
+            oImg2.onclick = function(){
+                oImg1.className = "";
+                oImg2.className = "";
+				oImg3.className = "on";
+				oImg4.className = "";
+            }
+			oImg3.onclick = function(){
+                oImg2.className = "";
+                oImg1.className = "";
+				oImg3.className = "";
+				oImg4.className = "on";
+            }
+			oImg4.onclick = function(){
+                oImg2.className = "on";
+                oImg1.className = "";
+				oImg3.className = "";
+				oImg4.className = "";
+            }
+			
+            /*
+                ①点击图片让类名on消失,让图片隐藏,让第二个元素添加类名on
+
+            */
+    </script> 
+</body>
+</html>
